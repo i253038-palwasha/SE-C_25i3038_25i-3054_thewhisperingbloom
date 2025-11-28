@@ -10,3 +10,22 @@
     height: 100vh;
 
 }
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color:black;
+    font-size: 35px;
+    font-family: arial ;
+    padding-left: 20px;
+    float:left;
+    padding-top:10px;
+}
