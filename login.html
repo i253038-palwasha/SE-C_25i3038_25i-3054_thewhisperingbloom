@@ -3,27 +3,31 @@
 <head>
     
     <title>login</title>
-    <h1>WELOCME BACK!</h1>
-    <h2>Sign in to access your favourtes and exclusive collection</h2>
+    
 </head>
  <link rel="stylesheet" href="stylelogin.css">
 <body>
+    <h1>WELOCME BACK!</h1>
+    <h2>Sign in to access your favourtes and exclusive collection</h2>
     <div class="container">
         <div class="login-container">
-            <div class="login_title">
-                <span>login</span>
-            </div>
             <form action=" ">
                 <h1>log in</h1>
                 <div class="input-box">
                     <input type="text" placeholder="enter username or eamil" required>
                 </div>
+                <div class="input-box">
+                    <input type="password" placeholder="password" required>
+                </div>
                 <div class="rememeber-forgot">
-                    <label for="checkbox">Remember Me</label>
+                    <label>
+                      <input type="checkbox" id="remember" name="remember">
+                        Remember Me
+                       </label>
                     <br>
                     <a href="#">Forgot password?</a>
                 </div>
-                <button type="submit" class="btw">login</button>
+                <button type="submit" class="btn">login</button>
                 <div class="register-link">
                     <p>Dont have an account? <a href="#">register</a></p>
                 </div>
@@ -31,9 +35,9 @@
         </div>
         <div class="signup-container">
             <div class="signup_container">
-                <span>sign up</span>
             </div>
             <form action="">
+                <h1>Sign up</h1>
                 <div class="input-box">
                     <input type="text" placeholder="enter username or email" required>
                 </div> 
@@ -43,7 +47,7 @@
                 <div class="input-box">
                     <input type="password" placeholder=" confirm password" required>
                 </div>
-                ,<button type="submit" class="btw">sign up</button>
+                <button type="submit" class="btn">sign up</button>
             </form>
         </div>
     </div>

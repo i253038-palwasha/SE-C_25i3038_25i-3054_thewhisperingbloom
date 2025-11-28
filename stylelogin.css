@@ -3,19 +3,24 @@
     margin: 0;
     box-sizing: border-box;
 }
-:root{
-    --second-color: #000000;
-    --primary-color:#000000;
-    --black-color:#000000;
-
+:root {
+    --primary-color: #978c85;    
+    --background-color: rgba(255,255,255,0.1);  
+    --button-hover: #a79f98;    
+    --title-color: #000000;      
+    --body-color: #ffffff;       
+    --font-family: 'Arial, sans-serif';
+    --second-color: #000000;       
+    --black-color: #000000;
 }
+
 body{
     background-position: center;
-    background-image: url(login\ image.png.jpg);
+    background-image: url("login image.png.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: Arial, sans-serif;
+    font-family:var(--font-family);
     color: var(--second-color);
     text-align: center;
 }
@@ -27,13 +32,13 @@ a{
 body > h1{
     margin-top: 40px;
     font-size: 40px;
-    color: white;
+    color: black;
 }
 
 body > h2{
     margin-bottom: 40px;
     font-size: 20px;
-    color: white;
+    color: black;
     opacity: 0.8;
 }
 a:hover{
@@ -43,22 +48,42 @@ a:hover{
 .container {
     display: flex;
     width: 100%;
-    min-height: 50vh;
-    justify-content: left;
-    align-items:left;
-    background-color: rgba(0,0,0, 0.2);
+    min-height: 70vh;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    
+   
 }
 .login-container,
 .signup-container{
     position: relative;
     backdrop-filter: blur(25px);
-    width: 450px;
+    width: 350px;
     border: 2px solid var(--primary-color);
-    padding: 7.5em 2.5em 4em 2.5em;
+    padding: 80px 30px 40px 30px;
     border-radius: 15px;
     box-shadow:  0px 0px 10px 2px  rgba(0,0,0, 0.2);
     color: var(--second-color);
+    
 }
+.form-title {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 0 0 20px 20px;
+    height: 70px;
+    width: 160px;
+    color: var(--black-color);
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .login_title,
 .signup_title{
     position: absolute;
@@ -66,37 +91,68 @@ a:hover{
     top: 0;
     display: flex;
     transform: translateX(-50%);
+    color: var(--black-color);
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
     border-radius: 0 0 20px 20px;
     height: 70px ;
+    width: 160px;
 }
-.login_title span,
-.signup_title{
-    color:var(--black-color);
-    font-size: 30px;
-}
-.login_title ::before{
-    content: " ";
-    top: 0;
-    left: -30px;
-    position: absolute;
-    border-top-right-radius:50% ;
-    width: 30px;
-    height:30px ;
-    box-shadow: 15px 0 0 0 var(--primary-color);
-    background: transparent ;
 
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    background: var(--background-color);
+    color: var(--second-color);
+    font-size: 16px;
 }
-.login_title::after{
-    content: " ";
-    top: 0;
-    left:-30px;
-    position: absolute;
-    border-top-right-radius:50% ;
-    width: 30px;
-    height:30px ;
-    box-shadow: 15px 0 0 0 var(--primary-color);
-    background: transparent ;
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--button-hover);
+    color: var(--black-color);
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a79f98;
+}
+
+.remember-forgot {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.remember-forgot a {
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.register-link {
+    margin-top: 15px;
+}
+
+.register-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
 }
