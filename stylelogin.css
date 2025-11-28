@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --second-color: #000000;
+    --primary-color:#000000;
+    --black-color:#000000;
+
+}
+body{
+    background-position: center;
+    background-image: url(login\ image.png.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: var(--second-color);
+    text-align: center;
+}
+a{
+    color: var(--second-color);
+    text-decoration: none;
+
+}
+body > h1{
+    margin-top: 40px;
+    font-size: 40px;
+    color: white;
+}
+
+body > h2{
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: white;
+    opacity: 0.8;
+}
+a:hover{
+    text-decoration: underline;
+
+}
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+    justify-content: left;
+    align-items:left;
+    background-color: rgba(0,0,0, 0.2);
+}
+.login-container,
+.signup-container{
+    position: relative;
+    backdrop-filter: blur(25px);
+    width: 450px;
+    border: 2px solid var(--primary-color);
+    padding: 7.5em 2.5em 4em 2.5em;
+    border-radius: 15px;
+    box-shadow:  0px 0px 10px 2px  rgba(0,0,0, 0.2);
+    color: var(--second-color);
+}
+.login_title,
+.signup_title{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    display: flex;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 0 0 20px 20px;
+    height: 70px ;
+}
+.login_title span,
+.signup_title{
+    color:var(--black-color);
+    font-size: 30px;
+}
+.login_title ::before{
+    content: " ";
+    top: 0;
+    left: -30px;
+    position: absolute;
+    border-top-right-radius:50% ;
+    width: 30px;
+    height:30px ;
+    box-shadow: 15px 0 0 0 var(--primary-color);
+    background: transparent ;
+
+}
+.login_title::after{
+    content: " ";
+    top: 0;
+    left:-30px;
+    position: absolute;
+    border-top-right-radius:50% ;
+    width: 30px;
+    height:30px ;
+    box-shadow: 15px 0 0 0 var(--primary-color);
+    background: transparent ;
+}
