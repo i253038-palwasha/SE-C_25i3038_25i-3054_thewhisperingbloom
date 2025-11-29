@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color: #978c85;    
+    --primary-color: #b8aaa1;    
     --background-color: rgba(255,255,255,0.1);  
-    --button-hover: #a79f98;    
+    --button-hover: #978f86;    
     --title-color: #000000;      
     --body-color: #ffffff;       
     --font-family: 'Arial, sans-serif';
