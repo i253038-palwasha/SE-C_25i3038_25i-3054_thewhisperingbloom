@@ -47,7 +47,8 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
+    gap: 120px;
+    padding: 50px;
 }
 
 .contact-info, 
@@ -70,4 +71,76 @@ section{
     color: var(--second-color);
     background: rgba(255,255,255,0.1)
 }
+.faq{
 
+    flex:none;
+    padding:10 ps 20px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    max-width: 350px;
+    width: 350px;
+    position: relative;
+    backdrop-filter: blur(25px);
+    width: 350px;
+    border: 2px solid var(--primary-color);
+    padding: 80px 30px 40px 30px;
+    border-radius: 15px;
+    box-shadow:  0px 0px 10px 2px  rgba(0,0,0, 0.2);
+    color: var(--second-color);
+    background: rgba(255,255,255,0.1)
+}
+.faq h2{
+    position: absolute;
+    top: 25px;
+
+    margin: 0;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: 'arial,sans-serif';
+}
+.accordian{
+    margin: 20px 0 0;
+    width:100%;
+    max-width: 100%;
+    padding: 5px;
+
+}
+li{
+    list-style: none;
+}
+.accordian li label{
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    font-size:15px;
+    font-weight: 200;
+    background: rgba(255,255,255,0.1);
+    margin: 2px;
+    cursor:pointer;
+    position: relative;
+}
+label::after{
+    content:'+';
+    font-size: 34px;
+    position:absolute;
+    right:20px;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .content {
+    background: rgba(255,255,255,0.1);
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s,padding .5s;
+}
+.accordian input[type="radio"]:checked+label+.content{
+    max-height: 300px;
+    padding:30px 30px;
+}
+.accordian input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+}
