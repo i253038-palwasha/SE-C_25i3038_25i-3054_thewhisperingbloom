@@ -1,0 +1,61 @@
+body{
+           
+    background-color: #F6EBEB;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+.top {
+height: 80px;
+background:#F6EBEB;
+padding: 20px;
+position: relative;
+}
+.logo img{
+width: 70px;
+height: 70px;
+margin-top: -25px;
+}
+
+.searchbox{
+width: 255px;
+height: 20px;
+padding: 5px;
+position: relative;
+border: 2px;
+margin-left: 500px;
+}
+.searchicon
+{
+width: 30px;
+position: absolute;
+left: 800px;
+top: 20px;
+}
+.header{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.header img {
+width: 20px;
+height: auto;  
+margin-left: 20px;  
+}
+.design{
+   
+    position: relative;
+    text-align: center;
+    top: -65px;
+}
+.checkboxspace{
+    margin-right: 30px;
+}
+.chain img{
+width: 70px;
+height: 70px;
+}
+.charms img{
+    width: 70px;
+height: 70px;
+}
