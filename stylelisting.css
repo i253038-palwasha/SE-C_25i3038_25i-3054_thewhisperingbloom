@@ -1,0 +1,83 @@
+body{
+           
+    background-color: #F6EBEB;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.top {
+height: 80px;
+background:#F6EBEB;
+padding: 20px;
+position: relative;
+}
+.logo img{
+width: 70px;
+height: 70px;
+margin-top: -25px;
+}
+.searchbox{
+width: 255px;
+height: 20px;
+padding: 5px;
+position: relative;
+border: 2px;
+margin-left: 500px;
+}
+.searchicon
+{
+width: 30px;
+position: absolute;
+left: 800px;
+top: 20px;
+}
+.header{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.header img {
+width: 20px;
+height: auto;  
+margin-left: 20px;  
+}
+.sidebar{
+    top: 50px;
+    background: antiquewhite;
+    width: 200px;
+    left: 10px;
+    padding: 20px;
+    height: 300px;
+    float:left;
+}
+.products{
+    margin-left: 300px;
+    padding: 20px;
+    overflow: hidden;
+}
+.product{
+    float: left;
+    width: 150px;
+    margin: 10px;
+    text-align: left;
+}
+.product img{
+   
+    width: 110px;
+    height: 110px;
+    margin-top: -30px;
+}
+.footer{
+    background: #D7B3B3;
+    padding: 20px;
+    text-align: center;
+
+}
+.footerlabels a {
+margin-right: 15px;
+
+}
+.platforms img{
+width: 25px;
+height: 25px;
+margin: 5px;
+}
