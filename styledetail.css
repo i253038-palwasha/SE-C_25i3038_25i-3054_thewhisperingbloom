@@ -41,6 +41,12 @@ height: auto;
 margin-left: 20px;  
 }
 .mainimage img{
-    width: 100px;
-    height: 100px;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+}
+.images img{
+margin-left: 20px;
+width: 90px;
+height: 90px;
 }
