@@ -3,7 +3,6 @@ body{
     background-color: #F6EBEB;
     margin: 0;
     font-family: Arial, sans-serif;
-
 }
 .top {
 height: 80px;
@@ -16,7 +15,6 @@ width: 70px;
 height: 70px;
 margin-top: -25px;
 }
-
 .searchbox{
 width: 255px;
 height: 20px;
@@ -42,35 +40,7 @@ width: 20px;
 height: auto;  
 margin-left: 20px;  
 }
-.design{
-   
-    position: relative;
-    text-align: center;
-    top: -65px;
-}
-.checkboxspace{
-    margin-right: 30px;
-}
-.chain img{
-width: 70px;
-height: 70px;
-}
-.charms img{
-    width: 70px;
-height: 70px;
-}
-.footer{
-    background: #D7B3B3;
-    padding: 20px;
-    text-align: center;
-
-}
-.footerlabels a {
-margin-right: 15px;
-
-}
-.platforms img{
-width: 25px;
-height: 25px;
-margin: 5px;
+.mainimage img{
+    width: 100px;
+    height: 100px;
 }
