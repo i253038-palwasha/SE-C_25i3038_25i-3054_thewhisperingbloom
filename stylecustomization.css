@@ -59,3 +59,18 @@ height: 70px;
     width: 70px;
 height: 70px;
 }
+.footer{
+    background: #D7B3B3;
+    padding: 20px;
+    text-align: center;
+
+}
+.footerlabels a {
+margin-right: 15px;
+
+}
+.platforms img{
+width: 25px;
+height: 25px;
+margin: 5px;
+}
